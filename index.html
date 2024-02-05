@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="searchbar">
+        <br>
+        <h1>To-Do List</h1>
+        <br>
+        <input type="text" placeholder="Add to-do's" id="input"></input>
+        <button class="button" onclick="addToDo()">Add</button>
+
+        <div class="listPopup">
+            <div class="customdiv">
+                <button class="round-btn" onclick="done(this)">
+                    <p class="btntext done">✓</p>
+                </button>
+                <p class="taskdes">Your text goes here</p>
+                <button class="close-btn" onclick="removetask(this)">
+                    <p class="btntext remove">x</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
